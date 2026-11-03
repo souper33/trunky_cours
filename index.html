@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Réviser le japonais</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<h1>Réviser le japonais</h1>
+<p>Cours 1 à 4 et cours en autonomie : fiches, flashcards, hiragana, mots et quiz</p>
+</header>
+<div id="hud"></div>
+<nav id="tabs" role="tablist"></nav>
+<main>
+<section id="fiches"><p class="mut">Touche une fiche pour l’ouvrir. Elles sont détaillées : lis-les dans l’ordre, puis passe aux flashcards.</p><div id="flist"></div></section>
+<section id="cards" hidden>
+<div class="filters" id="cf"></div>
+<div id="cflash"></div>
+</section>
+<section id="hira" hidden></section>
+<section id="mots" hidden></section>
+<section id="nombres" hidden></section>
+<section id="jeux" hidden></section>
+<section id="quiz" hidden>
+<div class="filters" id="qf"></div>
+<p class="mut" id="qinfo"></p>
+<div id="qbox"></div>
+</section>
+<section id="profil" hidden></section>
+</main>
+<script src="core.js"></script>
+<script src="game.js"></script>
+<script src="data.js"></script>
+<script src="numbers.js"></script>
+<script src="hiragana.js"></script>
+<script src="app.js"></script>
+<script src="hira.js"></script>
+<script src="mots.js"></script>
+<script src="nombres.js"></script>
+<script src="jeux.js"></script>
+<script src="profil.js"></script>
+<script>Game.mount(document.getElementById("hud"))</script>
+</body>
+</html>
